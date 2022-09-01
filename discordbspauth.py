@@ -11,5 +11,6 @@ async def on_ready():
 async def Activation(ctx):
     args = ctx.message.content.split(" ")
     if(len(args) == 2):
+        hwid = args[1];
         requests.get(f"http://suerte.ct8.pl/AuthService.php?hwid={hwid}&dcid={ctx.author.id}&method=addnew")
 client.run("MTAxNDgyNjg1ODQ2ODA4OTg3Ng.GrgYCX.b4xmMPQOHB9KuwOg0MWJZcn8XXJOqvr1uzEfEk")
