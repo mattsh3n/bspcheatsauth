@@ -13,6 +13,4 @@ async def Activation(ctx):
     if(len(args) == 2):
         hwid = args[1]
         requests.get(f"http://suerte.ct8.pl/AuthService.php?hwid={hwid}&dcid={ctx.author.id}&method=addnew")
-        role = discord.utils.get(ctx.message.author.server.roles, name="BSPAccess")
-        await client.add_roles(ctx.message.author, role)
 client.run("MTAxNDgyNjg1ODQ2ODA4OTg3Ng.GrgYCX.b4xmMPQOHB9KuwOg0MWJZcn8XXJOqvr1uzEfEk")
