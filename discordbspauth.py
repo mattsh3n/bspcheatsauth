@@ -9,7 +9,6 @@ async def on_ready():
     await client.change_presence(activity=discord.Activity(type=discord.ActivityType.playing,name="BlockStarPlanet"))
 @client.command()
 async def Activation(ctx):
-    if ctx.channel.id != 1014620101271617539: return
     args = ctx.message.content.split(" ")
     if(len(args) == 2):
         hwid = args[1]
